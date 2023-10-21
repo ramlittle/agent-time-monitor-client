@@ -8,5 +8,4 @@ export function examineCredentials(userId) {
             navigate("/login")
         })
     }
-    return console.log("valid credentials");
 }

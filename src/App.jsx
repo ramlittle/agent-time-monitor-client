@@ -13,7 +13,7 @@ const App=()=>{
         <Route path="/breaks" element={<Breaks examineCredentials={examineCredentials}/>}/>
         <Route path="/agentout" element={<AgentOut examineCredentials={examineCredentials}/>}/>
         <Route path="/profile" element={<Profile examineCredentials={examineCredentials}/>}/>
-        <Route path="/login" element={<Login/>}/>
+        <Route path="/login" element={<Login examineCredentials={examineCredentials}/>}/>
       </Routes>
     </>
   )
