@@ -1,11 +1,11 @@
 import Header from './Header';
 import Footer from './Footer';
-const AgentOut=()=>{
+const AgentOut = () => {
     return (
         <>
-         <Header/>
+            <Header />
             Agent OUT
-            <Footer/>
+            <Footer />
         </>
     )
 }

@@ -2,17 +2,23 @@ import '../styles/Dashboard.css'
 
 import Header from './Header';
 import Footer from './Footer';
-const Dashboard=()=>{
-    return(
+import { useState, useEffect } from 'react';
+
+const Dashboard = ({examineCredentials}) => {
+
+    const [userId, setUserId] = useState(localStorage.getItem('userId'))
+    examineCredentials(userId);
+    
+    return (
         <>
-            <Header/>
-            <section className="dashboard-container"> 
+            <Header />
+            <section className="dashboard-container">
                 <div>
                     Welcome, User .
                 </div>
                 <div>
                     <span>Announcements</span>
-                    <hr/>                    
+                    <hr />
                 </div>
                 <div>
                     <div>
@@ -33,7 +39,7 @@ const Dashboard=()=>{
                     </div>
                 </div>
             </section>
-            <Footer/>
+            <Footer />
         </>
     )
 }
