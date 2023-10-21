@@ -1,0 +1,47 @@
+.header-container{
+    background-color: dodgerblue;
+    color:white;
+    padding: 0.25rem;
+    display:flex;
+    justify-content:right;
+    align-items:center;
+    gap:1rem;
+}
+.header-container > span:nth-child(2){
+    font-weight:bold;
+}
+.header-container > span:nth-child(3){
+    width:2.5rem;
+    height:2.5rem;    
+}
+.header-container > span:nth-child(3)>img{
+    border-radius:100%;
+    filter:grayscale(100%);
+    border:0.10rem solid white;
+}
+.header-container > span:nth-child(3)>img:hover{
+    border:0.15rem solid gold;
+    filter:grayscale(0%);
+
+}
+/* menu */
+.menu-container{
+    position:absolute;
+    top: 3rem;
+    right: 0.5rem;
+    display:flex;
+    flex-direction:column;
+    gap:0.25rem;
+    width: 8%;
+    border:1px solid white;
+    background-color:dodgerblue;
+    padding:0.5rem;
+    color:white;
+}
+.menu-container > span{
+    padding:0.25rem;
+}
+.menu-container > span:hover{
+    background-color:gold;
+    color:black;
+}

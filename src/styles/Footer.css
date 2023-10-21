@@ -1,0 +1,17 @@
+.footer-container{
+    background-color: black;
+    padding:1rem;
+    color:white;
+    gap:0.25rem;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.footer-container a{
+    color:white;
+    text-decoration:none;
+}
+.footer-container a:hover{
+    color:gold;
+}
