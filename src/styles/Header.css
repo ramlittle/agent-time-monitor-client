@@ -6,13 +6,18 @@
     justify-content:right;
     align-items:center;
     gap:1rem;
+    width:100%;
+}
+.header-container > span:nth-child(1){
+    width:80%;
 }
 .header-container > span:nth-child(2){
     font-weight:bold;
+    width:10%;
 }
 .header-container > span:nth-child(3){
     width:2.5rem;
-    height:2.5rem;    
+    height:2.5rem;   
 }
 .header-container > span:nth-child(3)>img{
     border-radius:100%;
@@ -41,7 +46,13 @@
 .menu-container > span{
     padding:0.25rem;
 }
-.menu-container > span:hover{
+.menu-container > span:hover,
+.links:hover{
     background-color:gold;
     color:black;
 }
+.links{
+    text-decoration:none;
+    color:white;
+}
+

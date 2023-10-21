@@ -26,6 +26,7 @@
 .login-container div:nth-child(3) > input{
     padding:0.75rem;
     font-size:large;
+    font-weight:thin;
     width: 30rem;
 }
 
