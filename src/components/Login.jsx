@@ -45,11 +45,12 @@ const Login = ({examineCredentials}) => {
                     setErrorMessage('Access Granted')
                     console.log('result dat',result.data)
                     localStorage.setItem('userId',result.data.id);
-                    localStorage.setItem('userEmail',result.data.email)
-                    // localStorage.setItem('userIsAdmin',result.data.isAdmin)
-                    // localStorage.setItem('userFirstName',result.data.firstName)
-                    // localStorage.setItem('userLastName',result.data.lastName)
-                    // localStorage.setItem('userBirthDate',result.data.birthDate)
+                    localStorage.setItem('realName',result.data.realName)
+                    localStorage.setItem('americanName',result.data.americanName)
+                    localStorage.setItem('email',result.data.email)
+                    localStorage.setItem('role',result.data.role)
+                    localStorage.setItem('pictureLink',result.data.pictureLink)
+                    localStorage.setItem('team',result.data.team)
                     navigate('/')
                 }
             })

@@ -5,7 +5,8 @@ import { Link,useNavigate } from 'react-router-dom'
 
 const Header = () => {
     const [shown, setShown] = useState(false)
-    const [userEmail,setUserEmail] = useState(localStorage.getItem('userEmail'))
+    const [email,setEmail] = useState(localStorage.getItem('email'))
+    const [pictureLink,setPictureLink]=useState(localStorage.getItem('pictureLink'))
     const navigate=useNavigate();
     function handleLogout(){
         const confirm=window.confirm('This will Log you out of ATM')
@@ -18,9 +19,9 @@ const Header = () => {
         <>
             <section className="header-container">
                 <span>Agent Time Monitor</span>
-                <span>{userEmail}</span>
+                <span>{email}</span>
                 <span onClick={() => setShown(!shown)}>
-                    <img src="https://assets.nick.com/uri/mgid:arc:imageassetref:shared.nick.us:a625d441-bbbf-42c8-9927-6a0157aac911?quality=0.7&gen=ntrn&legacyStatusCode=true" />
+                    <img src={pictureLink} />
                 </span>
             </section>
             {
